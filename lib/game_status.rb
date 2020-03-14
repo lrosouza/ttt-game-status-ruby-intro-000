@@ -40,13 +40,13 @@ def full?(board)
 
 #draw?_method
 def draw?(board)
-  if full == true && won == false
+  if full?(board) == true && won?(board) == false
     true
   end
-  if won == false && full == false
+  if won?(board) == false && full?(board) == false
     false
   end
-  if won == false
+  if won?(board) == false
     false
   end
 
