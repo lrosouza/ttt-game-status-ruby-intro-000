@@ -15,6 +15,7 @@ WIN_COMBINATIONS = [
 [2,4,6], #Diag_right
 ]
 
+#won_Method
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
     win_index_1 = win_combination[0]
@@ -32,6 +33,18 @@ def won?(board)
   return false
 end
 
+#full?_method
 def full?(board)
     board.all? { |i| i == "X" || i=="O" }
   end
+
+#draw?_method
+def draw?(board)
+  if full == true && won == true
+    true
+  end
+  return false
+end
+
+
+
