@@ -59,7 +59,7 @@ end
 #winner_method
 def winner(board)
   if won?(board) && over(board)
-    win_combination[0]    
+    win_combination[0]
   end
-  
+
 end
