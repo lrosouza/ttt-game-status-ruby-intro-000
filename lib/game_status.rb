@@ -40,8 +40,15 @@ def full?(board)
 
 #draw?_method
 def draw?(board)
-  if full == true && won == true
+  if full == true && won == false
     true
   end
-  return false
+  if won == false && full == false
+    false
+  end
+  if won == false
+    false   
+  end
+
 end
+                               
